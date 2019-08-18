@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .cat_info {
+        width: 930px;
+        height: 230px;
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .pic,
+    .pic img {
+        width: 328px;
+        height: 210px;
+        /* background-color: pink; */
+    }
+
+    .info {
+        width: 580px;
+        height: 180px;
+        /* background-color: brown; */
+    }
+
+    .info .title_ {
+        /* width: 100%; */
+        height: 30px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 18px;
+        padding-top: 5px;
+        box-sizing: border-box;
+    }
+    .info .date_num,
+    .info .short_line {
+        height: 30px;
+        line-height: 30px;
+        margin-top: 7px;
+    }
+
+
+    .info .date_num {
+        font-size: 12px;
+        color: #333;
+    }
+
+    .info .short_line span {
+        display: block;
+        width: 27px;
+        height: 1px;
+        background-color: #1b1b1b;
+    }
+
+    .info .detail {
+        margin-top: -12px;
+        font-size: 12px;
+        color: #999;
+        font-family: MicrosoftYaHei;
+    }
+    .red_line {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 0px;
+        height: 1px;
+        background-color: #ea5413;
+        transition: 1s;
+    }
+
+    .cat_info:hover .red_line {
+        width: 930px;
+    }
+    .cat_info:hover .title_ {
+        color: #ea5413;
+    }
+</style>
+
+<body>
+    <div class="cat_info">
+        <div class="pic">
+            <img src="./img/风景/13.jpg" alt="">
+        </div>
+        <div class="info">
+            <div class="title_">上海宠物猫专卖店靠谱吗？</div>
+            <div class="date_num">
+                <span>2019-07-10</span>
+                <span>浏览量:2314</span>
+            </div>
+            <div class="short_line">
+                <span></span>
+            </div>
+            <div class="detail">
+                <span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上海宠物猫专卖店靠谱吗？这个问题一直受到关注，上海有很多猫舍而且猫咪的价格也会不一样的，给很多上海购买猫咪的宠主带来了很多的困惑，怎么样判断宠物专卖店是正规的呢？接下来就跟随小编一起看看吧！
+                    宠物猫专门店在上海有很多的作为买主这里要提醒一下，去宠物店买猫之前先学习一下在整个购买的过程中需要注意些什么，因为猫咪是活体动物很多保障也没办法把握对于商家来说能够少做一项就少做，比如在购买猫咪之前首先做免疫检测，确定...
+                </span>
+            </div>
+        </div>
+        <div class="red_line"></div>
+    </div>
+</body>
+
+</html>

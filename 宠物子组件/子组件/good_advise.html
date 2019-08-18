@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+   
+    .goodadvise {
+        width: 228px;
+        height: 358px;
+        /* background-color: aquamarine; */
+        position: relative;
+        overflow: hidden;
+        font-family: MicrosoftYaHei;
+        background-color: lightgrey;
+    }
+    .son1,
+    .son1 img {
+        width: 228px;
+        height: 195px; 
+    }
+   
+    .son1 div {
+        position: absolute;
+        top: 7px;
+        left: -21px;
+        transform: rotate(-45deg);
+        width: 80px;
+        height: 25px;
+        color: white;
+        font-size: 14px;
+        text-align: center;
+        line-height: 25px;
+        background-color: #EA5413;
+    }
+
+    .son2 {
+        width: 228px;
+        height: 163px;
+        /* background-color: yellow; */
+        display: flex;
+        flex-direction: column;
+        padding: 0 8px;
+        box-sizing: border-box;
+    }
+
+    .son2 div:not(.title_) {
+        width: 100%;
+        height: 20%;
+        /* background-color: blueviolet; */
+    }
+
+    .son2 .title_ {
+        width: 100%;
+        height: 40%;
+        /* background-color: green; */
+    }
+    .son2 .title_ span:nth-of-type(1) {
+        color: #ff6542;
+        font-size: 12px;
+    }
+    .son2 .title_ span:nth-of-type(2) {
+        font-size: 14px;
+        text-overflow: ellipsis;
+    }
+        
+
+    .son2 .red_line span{
+        display: inline-block;
+        height: 3px;
+        background-color: #ea5413;
+        width: 24px;
+        transition: 0.5s;
+        -webkit-transition:0.5s; /* Safari */
+    }
+    
+    .goodadvise:hover .son2 .red_line span {
+        width: 212px;
+    }
+    .son2 .price {
+        font-size: 14px;
+        font-weight: 800;
+    }
+   
+    .son2 .price span:nth-of-type(2) {
+        color: #ff6542;
+    }
+    .son2 .shop span {
+        color: #999999;
+        font-size: 12px;
+    }
+    .son2 .shop img {
+        width: 40px;
+        height: 15px;
+    }
+</style>
+
+<body>
+    <div class="goodadvise">
+        <div class="son1">
+            <div>推荐</div>
+            <img src="./img/风景/10.jpg" alt="">
+        </div>
+        <div class="son2">
+            <div class="red_line">
+                <span></span>
+            </div>
+            <div class="title_">
+                <span>精品推荐:</span>
+                <span>正规猫舍出售&nbsp;布偶证书齐全&nbsp;包养活&nbsp;签订协议</span>
+                    
+            </div>
+            <div class="price">
+                <span>价格：</span>
+                <span>1800/1只</span>
+            </div>
+            <div class="shop">
+                <span>巴拉拉猫舍</span>
+                <img src="./img/img/美食/10.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

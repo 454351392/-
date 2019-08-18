@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .hotcat,
+        .son1,
+        .son1 img,
+        .son2 {
+            width: 230px;
+            height: 230px;
+        }
+        .hotcat {
+            /* background-color: pink; */
+            position: relative;
+            /* margin-left: 600px; */
+            overflow: hidden;
+        }
+        /* .son1 {
+            background-color: lightgreen
+        }
+        */
+        .son2 {
+            /* background-color: grey; */
+            display: flex;
+           
+            position: absolute;
+            top: 0px;
+            width: 230px;
+            left: -230px;
+            transition:0.8s;
+            -webkit-transition:0.8s; /* Safari */
+            background-color: transparent;
+            color: transparent;
+        }
+        .hotcat:hover .son2 {
+            left: 0px;
+            background:rgba(0,0,0,0.2);
+            color: white;
+        }
+        .son2 .info {
+            margin: auto;
+            font-family: MicrosoftYaHei;
+            font-size: 16px;
+            font-stretch: normal;
+
+        }
+        .son2 .price {
+            position: relative;
+            top: 12px;
+            left: -22px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hotcat">
+        <div class="son1">
+            <img src="./img/风景/1.jpg" alt="">
+        </div>
+        <div class="son2">
+            <div class="info">
+                <div>布偶猫</div>
+                <div class="price">6000-2000元</div>
+            </div>
+            
+        </div>
+
+    </div>
+</body>
+</html>
